@@ -142,6 +142,10 @@ display: none;
     width: 100vw;
 }
 
+#storoverskrift{
+    font-size: 3em;
+}
+
 #førstetekst{
     display: flex;
     flex-direction: column;
@@ -163,6 +167,7 @@ display: none;
 
 #sektion1{
 width: 50vw;
+line-height: 24px;
 }
 
 #merchknap{

@@ -1,0 +1,19 @@
+
+
+
+.sideomside{
+    display: flex;
+    flex-direction: row;
+}
+.kasse{
+    background-color: coral;
+}
+.boks{
+    display: flex;
+    flex-direction: row;
+
+}
+.donation{
+    display: flex;
+    flex-direction: column;
+}
