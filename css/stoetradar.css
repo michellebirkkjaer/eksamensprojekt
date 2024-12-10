@@ -1,5 +1,27 @@
+*{
+    margin: 0;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+#støtradarimg{
+    width: 100vw;
+    background-image: linear-gradient(transparent 60%, black 100%);
+}
 
+#mønsterimg {
+    width: 100vw;
+}
+
+.støtteimg{
+    width: 5vw;
+}
+
+main{
+    padding: 7em;
+    background-color: black;
+    color: white;
+}
 
 .sideomside{
     display: flex;
@@ -7,6 +29,8 @@
 }
 .kasse{
     background-color: coral;
+    padding: 7em;
+
 }
 .boks{
     display: flex;
@@ -16,4 +40,24 @@
 .donation{
     display: flex;
     flex-direction: column;
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+aside{
+    padding-bottom: 3em;
+}
+
+h1{
+    margin-bottom: 1em;
+}
+
+h2{
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3{
+    margin-left: 2.5em;
 }
