@@ -1,5 +1,9 @@
 *{
     margin: 0;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
 }
 
 
@@ -7,6 +11,26 @@
     width: 100vw;
 }
 
+.main{
+width: 100vw;
+line-height: 1.5em;
+}
+
 #mønsterimg{
     width: 100vw;
+}
+
+.billeder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+figure{
+    width: 100vw;
+}
+
+.imgstr{
+    width: 24em;
+    padding:2em;
 }
