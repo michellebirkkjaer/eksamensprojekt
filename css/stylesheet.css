@@ -14,9 +14,9 @@ html{
 header {
     position: fixed;
     top:0;
-    left:5px;
-    right:5px;
-    width: 100%;
+    left:0;
+    right:0;
+    width: 100vw;
     z-index: 1000;
     background: #dd6d46;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
