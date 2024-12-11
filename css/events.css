@@ -1,13 +1,15 @@
 * {
     margin: 0;
-    box-sizing: border-box; /* Vigtig til at undgå overflow */
-    font-family: Inter;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 html{
 background-color: black;  
 color: white;
+margin: 0;
+width: 100vw;
 }
 
 header {
@@ -137,6 +139,7 @@ header label {
 .burgermenu{
 display: none;
 }
+
 
 #instrumenterimg{
     width: 100%;
