@@ -180,3 +180,18 @@ figure{
     width: 24em;
     padding:2em;
 }
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+}
+
+#footerhøjre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}

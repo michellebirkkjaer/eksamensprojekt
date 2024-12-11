@@ -190,3 +190,19 @@ height: auto; /* Bevarer billedets proportioner */
 section p{
     width: 100%;
 }
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+}
+
+#footerhøjre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}

@@ -224,3 +224,20 @@ h2{
 h3{
     margin-left: 2.5em;
 }
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+    color: white;
+}
+
+#footerhøjre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
