@@ -22,6 +22,14 @@ color: white;
     width: 15em;
 }
 
+#åbning {
+    display: flex;
+    flex-direction: column;    
+    align-content: center;
+    margin: 2em;
+    width: 80vw;
+}
+
 .sektioner{
     width: 80vw;
     max-width: 80vw;
@@ -40,7 +48,7 @@ width: 20em;
 height: auto; /* Bevarer billedets proportioner */
 }
 
-.sektioner h1, .sektioner h2, .sektioner p {
+.sektioner h1, .sektioner h2, .sektioner p, h3, h4, a {
     margin: 1em; /* Tilføj indre afstand for tekst */
     word-wrap: break-word; /* Forhindrer lange ord i at overskride bredde */
 }
