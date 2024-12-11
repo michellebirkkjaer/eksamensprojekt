@@ -1,11 +1,13 @@
 /* Styling af header */
 *{
-    background-color: black;
     color:#fff;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
+html{
+    background-color: black;
+}
 
 header {
     position: fixed;
@@ -14,7 +16,7 @@ header {
     right:5px;
     width: 100%;
     z-index: 1000;
-    background: transparent;
+    background: #dd6d46;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     padding: 5px;
     display: flex;
@@ -59,7 +61,7 @@ header .navbar ul li a {
 
 /* Hovereffekt til menupunkterne */
 header .navbar ul li a:hover {
-    background: rgba(0,0,0,0.1);
+    background: #dd6c46ce;
     color: #fff;
 }
 
@@ -69,7 +71,7 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px; /* Ensartet bredde */
-    background: transparent; /* Let baggrundsfarve for synlighed */
+    background: #dd6d46; /* Let baggrundsfarve for synlighed */
     display: none;
     padding: 0;
 }

@@ -64,10 +64,20 @@ border-color: black;
 background-color: coral;
 padding: 0.5em;
 font-size: 14px;
+cursor: pointer;/*ændrer markøren til en hånd*/
 border-radius: 30px;
 width: 8em;
+transition: all 0.3s ease; /* Glidende overgang */
 }
 
+ /* Hover-effekt */
+ .knap:hover {
+    background-color: rgb(255, 108, 54); /* ændrer farven ved hover */
+ }
+
+#afslutning{
+    margin-left: 4em;
+}
 
 aside{
     padding-bottom: 3em;
