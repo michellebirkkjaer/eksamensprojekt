@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 200;
+    text-align: justify;
 }
 
 
@@ -158,8 +159,18 @@ display: none;
     display: flex;
     flex-direction: column;    
     align-content: center;
-    margin: 2em;
+    margin-left: 9em;
     width: 80vw;
+    line-height: 2.5em;
+}
+
+#sektion1{
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+#sektion2{
+    margin-bottom: 2em;
 }
 
 .sektioner{
@@ -179,6 +190,11 @@ display: none;
 width: 20em;
 height: auto; /* Bevarer billedets proportioner */
 }
+h1{
+    font-size: 34px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
 h1, h2, h3, h4 {
     font-weight: 400;
@@ -189,9 +205,6 @@ h1, h2, h3, h4 {
     word-wrap: break-word; /* Forhindrer lange ord i at overskride bredde */
 }
 
-article h3, p{
-    margin:1em;
-}
 
 #events{
     display: flex;
@@ -200,10 +213,8 @@ article h3, p{
 }
 
 section p{
-    width: 100%;
+    width: 98%;
 }
-
-
 
 
 .footer{
