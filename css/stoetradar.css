@@ -232,6 +232,10 @@ h1, h2, h3{
     font-weight: 400;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 .footer{
     display: flex;

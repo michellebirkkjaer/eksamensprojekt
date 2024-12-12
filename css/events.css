@@ -216,6 +216,10 @@ section p{
     width: 98%;
 }
 
+a{
+    color: #dd6d46;
+    text-decoration: none;
+}
 
 .footer{
     display: flex;
