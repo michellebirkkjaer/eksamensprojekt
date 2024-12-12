@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
 }
 
 
 html{
 background-color: black;  
 color: white;
-margin: 0;
 width: 100vw;
 }
 
@@ -177,6 +178,10 @@ display: none;
 .sektioner img {
 width: 20em;
 height: auto; /* Bevarer billedets proportioner */
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
 }
 
 .sektioner h1, .sektioner h2, .sektioner p, h3, h4, a {
