@@ -174,11 +174,14 @@ h1, h2 {
 #overskrift1{
     display: flex;
     justify-content: flex-start;
+    font-size: 36px;
 }
 
 #sektion1{
 width: 50vw;
-line-height: 24px;
+line-height: 28px;
+margin-left: 4em;
+text-align: justify;
 }
 
 #merchknap{
@@ -196,7 +199,7 @@ line-height: 24px;
     font-size: 15px;
     border-radius: 30px;
     width: 11em;
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
 
@@ -215,15 +218,22 @@ line-height: 24px;
 }
 
 #overskrift1{
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
 }
 
 #artikelet{
 margin-bottom: 6em;
+margin-right: 7em;
+margin-left: 7em;
 }
 
 #artikelto{
 margin-top: 2em;
+}
+
+
+#følgos{
+    color: #dd6d46;
 }
 
 .footer{
