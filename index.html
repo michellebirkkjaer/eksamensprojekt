@@ -12,7 +12,7 @@
 <body>
     <header>
         <a href="index.html"><img src="/img/radarlogo.png" alt="Radar logo" class="logo"></a>
-        
+        <!---https://www.youtube.com/watch?v=8eFeIFKAKHw&list=WL&index=63 brugt til at finde ud af hvordan man laver en burgermenu-->
         <nav class="navbar">
             <input type="checkbox" id="sidebar-active"> <!---selve checkboxen-->
             <label for="sidebar-active" class="open-sidebar-button"> <!---ikonet med de tre streger-->
@@ -100,9 +100,21 @@
 
     <h2 class="overskrift" id="overskrift2">Radar Merch</h2>
     <article class="artikler" id="artikelto">
-        <section><img src="img/t-shirt1.png" alt="Radar merch" class="merchimg"></section>
-        <section><img src="img/sweatshirt.png" alt="Radar merch" class="merchimg"></section>
-        <section><img src="img/t-shirt2.png" alt="Radar merch" class="merchimg"></section>
+        <section class="slideshow-container">
+            <button class="prev">&#10094;</button>
+            <article class="slideshow-wrapper">
+              <section class="slide" id="slide1">
+                <a href="#"><img src="/img/t-shirt1.png" alt=""></a>
+              </section>
+              <section class="slide" id="slide2">
+                <a href=“#”><img src="img/sweatshirt.png" alt=""></a>
+              </section>
+              <section class="slide" id="slide3">
+                <a href=“#”><img src="img/t-shirt2.png" alt=""></a>
+              </section>
+            </article>
+            <button class="next">&#10095;</button>
+        </section>
     </article>
     <article id="merchknap">
         <button type="button" class="knap">Køb merch ></button>
@@ -118,6 +130,7 @@
         </section>
     </article>
 
+    
 
     <figure>
         <img src="img/moenster.png" alt="Illustrationer" id="moenster">
