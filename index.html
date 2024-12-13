@@ -12,140 +12,131 @@
 <body>
     <header>
         <a href="index.html"><img src="/img/radarlogo.png" alt="Radar logo" class="logo"></a>
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar"></label>
         
         <nav class="navbar">
-            <ul>
-                <li><a href="#"> Events</a>
-                    <ul>
-                        <li><a href="/undersider/events.html">Kommende Events +</a>
-                        </li>
-                        <li><a href="#">Tidligere Events</a>
-                        </li>
-                    </ul>
-                </li>
-    
-                <li><a href="">Nyheder</a>
-                    <ul>
-                        <li><a href="#">bgbgbg</a>
-                        </li>
-                        <li><a href="#">bbr</a>
-                        </li>
-                    </ul>
-                </li>
-    
-                <li><a href="#">Om Radar</a>
-                    <ul>
-                        <li><a href="/undersider/historieogvaerdier.html">Historie og Mission +</a>
-                        </li>
-                        <li><a href="#">Værdier og Fokusområder</a>
-                        </li>
-                        <li><a href="#">Kunstnere</a>
-                        </li>
-                    </ul>
-                </li>
-    
-                <li><a href="#">Praktisk Info</a>
-                    <ul>
-                        <li><a href="#">Kontakt og Adresse</a>
-                        </li>
-                        <li><a href="#">Ofte stillede spørgsmål</a>
-                        </li>
-                        <li><a href="#">Feedback</a>
-                        </li>
-                        <li><a href="#">Leje af Radar</a>
-                        </li>
-                    </ul>
-                </li>
+            <input type="checkbox" id="sidebar-active"> <!---selve checkboxen-->
+            <label for="sidebar-active" class="open-sidebar-button"> <!---ikonet med de tre streger-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
 
-                <li><a href="undersider/stoetradar.html">Støt Radar +</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- burgermenu lavet vha. https://www.youtube.com/watch?v=8eFeIFKAKHw&list=WL&index=62 -->
-
-        <nav class="burgermenu">
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button"> <!-- de tre streger -->
-             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="streger"/></svg>
-             </label>
-
-            <label id="overlay" for="sidebar-active"></label> <!-- den der gør at vi kommer ud af sidebaren når vi trykker et andet sted på skærmen -->
-
+            
             <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button"> <!-- krydset -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" class="kryds"/></svg>        
+                <label for="sidebar-active" class="close-sidebar-button"> <!---kryds ikon der lukker menuen-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> 
                 </label>
-                <a href="#">priser</a>
-                <a href="../undermenuer/booking.html">booking+</a>
-                <a href="../undermenuer/info-om-udstyr.html">Info om udstyr+</a>
-             <a href="../undermenuer/omos.html">om os+</a>
+
+
+
+                <label id="overlay" for="sidebar-active"></label> <!---den der gør at vi kommer ud af sidebaren, hvis man klikker et andet sted på skærmen-->
+
+                
+            
+                <ul class="navbar-menu">
+                    <li><a href="#"> Events</a>
+                        <ul class="dropdown">
+                            <li><a href="/undersider/events.html">Kommende Events +</a>
+                            </li>
+                            <li><a href="#">Tidligere Events</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li><a href="">Nyheder</a>
+                    </li>
+        
+                    <li><a href="#">Om Radar</a>
+                        <ul class="dropdown">
+                            <li><a href="/undersider/historieogvaerdier.html">Historie og Mission +</a>
+                            </li>
+                            <li><a href="#">Værdier og Fokusområder</a>
+                            </li>
+                            <li><a href="#">Kunstnere</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li><a href="#">Praktisk Info</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Kontakt og Adresse</a>
+                            </li>
+                            <li><a href="#">Ofte stillede spørgsmål</a>
+                            </li>
+                            <li><a href="#">Feedback</a>
+                            </li>
+                            <li><a href="#">Leje af Radar</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="undersider/stoetradar.html">Støt Radar +</a>
+                    </li>
+                </ul>
             </div>
-         </nav>
+        </nav>
  </header>
- <section>
-    <img src="img/forside.png" alt="Band som spiller på Radar med illustrationer" id="forsideimg">
-</section>
-<section id="førstetekst">
-    <h1 id="storoverskrift">Find dine kommende billetter</h1>
-     <a href="/undersider/events.html" class="knap">Lige her</a>
- </section>
 
- <article class="artikler" id="artikelet">
+
     <section>
-        <img src="/img/forsideimg2.png" alt="Polaroid billede af band som spiller på Radar" id="forsidebillede2">
+        <img src="img/forside.png" alt="Band som spiller på Radar med illustrationer" id="forsideimg">
     </section>
-    <section id="sektion1">
-        <h2 class="overskrift" id="overskrift1">Radar: Aarhus' Dynamiske Spillested</h2>
-        <p>Radar er et af Aarhus’ mest spændende og nyskabende spillesteder, hvor musikkens grænser konstant udforskes og udfordres. Med fokus på det eksperimenterende, alternative og nicheprægede tilbyder Radar en unik platform for både lokale talenter og internationale kunstnere. Spillestedet er kendt for at samle musik og andre kunstformer i kreative koncerter, der inspirerer både publikum og kunstnere.</p>
-        <p>Missionen bag Radar er at skabe et rum, hvor kreativiteten kan trives, og hvor dialog og fællesskab styrkes i det aarhusianske musikmiljø. Fra nye og upcoming artister til etablerede navne byder Radar på et varieret program, der henvender sig til alle, som elsker at opleve noget ud over det sædvanlige.</p>
-        <p>Radar er ikke kun en scene for musik, men også en drivkraft for kulturel innovation i Aarhus. Med modige og visionære initiativer fortsætter spillestedet med at være et centrum for kreativ udvikling i byen.</p>
-        <p>Vil du dykke ned i historien og missionen bag Radar? Klik nedenunder for at læse mere om, hvordan spillestedet har formet Aarhus’ musikscene.</p>
-        <a href="/undersider/historieogvaerdier.html" class="knap">klik her></a>
+    <section id="førstetekst">
+        <h1 id="storoverskrift">Find dine kommende billetter</h1>
+        <a href="/undersider/events.html" class="knap">Lige her</a>
     </section>
- </article>
 
-<h2 class="overskrift">Radar Merch</h2>
-<article class="artikler" id="artikelto">
-    <section><img src="img/t-shirt1.png" alt=""></section>
-    <section><img src="img/sweatshirt.png" alt=""></section>
-    <section><img src="img/t-shirt2.png" alt=""></section>
-</article>
-<article id="merchknap">
-    <button type="button" class="knap">Køb merch ></button>
-</article>
+    <article class="artikler" id="artikelet">
+        <section>
+            <img src="/img/forsideimg2.png" alt="Polaroid billede af band som spiller på Radar" id="forsidebillede2">
+        </section>
+        <section id="sektion1">
+            <h2 class="overskrift" id="overskrift1">Radar: Aarhus' Dynamiske Spillested</h2>
+            <p>Radar er et af Aarhus’ mest spændende og nyskabende spillesteder, hvor musikkens grænser konstant udforskes og udfordres. Med fokus på det eksperimenterende, alternative og nicheprægede tilbyder Radar en unik platform for både lokale talenter og internationale kunstnere. Spillestedet er kendt for at samle musik og andre kunstformer i kreative koncerter, der inspirerer både publikum og kunstnere.</p>
+            <p>Missionen bag Radar er at skabe et rum, hvor kreativiteten kan trives, og hvor dialog og fællesskab styrkes i det aarhusianske musikmiljø. Fra nye og upcoming artister til etablerede navne byder Radar på et varieret program, der henvender sig til alle, som elsker at opleve noget ud over det sædvanlige.</p>
+            <p>Radar er ikke kun en scene for musik, men også en drivkraft for kulturel innovation i Aarhus. Med modige og visionære initiativer fortsætter spillestedet med at være et centrum for kreativ udvikling i byen.</p>
+            <p>Vil du dykke ned i historien og missionen bag Radar? Klik nedenunder for at læse mere om, hvordan spillestedet har formet Aarhus’ musikscene.</p>
+            <a href="/undersider/historieogvaerdier.html" class="knap">klik her></a>
+        </section>
+    </article>
 
-<article class="artikler" id="artikeltre">
-    <section>
-        <h2 class="overskrift" id="følgos">Følg os</h2>
-        <h2 class="overskrift"> på sociale medier</h2>
-    </section>
-    <section>
-        <img src="img/socialemedier.png" alt="Billede af to smartphones som viser Radars Facebook og Instagram">
-    </section>
-</article>
+    <h2 class="overskrift">Radar Merch</h2>
+    <article class="artikler" id="artikelto">
+        <section><img src="img/t-shirt1.png" alt="Radar merch" class="merchimg"></section>
+        <section><img src="img/sweatshirt.png" alt="Radar merch" class="merchimg"></section>
+        <section><img src="img/t-shirt2.png" alt="Radar merch" class="merchimg"></section>
+    </article>
+    <article id="merchknap">
+        <button type="button" class="knap">Køb merch ></button>
+    </article>
+
+    <article class="artikler" id="artikeltre">
+        <section>
+            <h2 class="overskrift" id="følgos">Følg os</h2>
+            <h2 class="overskrift"> på sociale medier</h2>
+        </section>
+        <section>
+            <img src="img/socialemedier.png" alt="Billede af to smartphones som viser Radars Facebook og Instagram">
+        </section>
+    </article>
 
 
-<figure>
-    <img src="img/moenster.png" alt="Illustrationer" id="moenster">
-</figure>
+    <figure>
+        <img src="img/moenster.png" alt="Illustrationer" id="moenster">
+    </figure>
 
 
-<footer class="footer">
-    <section>
-        <p>Radar</p>
-        <p>Karen Wegeners Gade 6</p>
-        <p>DK 8000 Aarhus C</p>
-        <p>Telefon +45 8676 0344</p>
-    </section>
-    <section id="footerhøjre">
-        <p>Kontakt</p>
-        <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
-        <p>Generel kontakt: kontakt(@)radarlive.dk</p>
-    </section>
-</footer>
+    <footer class="footer">
+        <section>
+            <p>Radar</p>
+            <p>Karen Wegeners Gade 6</p>
+            <p>DK 8000 Aarhus C</p>
+            <p>Telefon +45 8676 0344</p>
+        </section>
+        <section id="footerhøjre">
+            <p>Kontakt</p>
+            <p>Bookingforespørgsler: booking(@)radarlive.dk</p>
+            <p>Generel kontakt: kontakt(@)radarlive.dk</p>
+        </section>
+    </footer>
 
 </body>
 </html>
