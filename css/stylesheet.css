@@ -139,12 +139,10 @@ header label {
     display: none;
 }
 
-    /* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
-    .burgermenu{
-        display: none;
-        }
-
-
+/* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
+.burgermenu{
+    display: none;
+}
 
 h1, h2 {
     font-weight: 400;
@@ -263,11 +261,45 @@ max-width: 100vw;
 }
 }
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1270px) {
+    body{
+        background-color: black;
+        color:white;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+
+
+    #forsideimg {
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+
+    #artikelet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    #forsidebillede2 {
+        width: 40vw;
+        margin-right: 2em;
+    }
 
     .merchimg{
         width: 20em;
     }
+
+    #moenster{
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+
     
     header {
         position: fixed;
@@ -290,8 +322,8 @@ max-width: 100vw;
     }
     
     .logo{
-        width: 15vw;
-        padding-top: 30%;
+        width: 10vw;
+        padding-top: 10%;
     
     }
     
@@ -431,5 +463,17 @@ max-width: 100vw;
        box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25);
        transition: 1s ease-out;
        }
+
+
+       .logo{
+        width: 20vw;
+        padding-top: 10%;
+    
+    }
+
+    #forsideimg {
+        min-width: 100vw;
+        max-width: 100vw;
+    }
 }
 }
