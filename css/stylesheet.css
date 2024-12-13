@@ -233,7 +233,6 @@ margin-left: 7em;
 }
 
 #artikelto{
-margin-top: 2em;
 min-width: 100vw;
 max-width: 100vw;
 }
@@ -299,6 +298,10 @@ max-width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    #overskrift2{
+        margin-bottom: 1em;
     }
 
     #artikeltre{
