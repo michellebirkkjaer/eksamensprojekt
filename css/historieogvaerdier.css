@@ -186,6 +186,12 @@ figure{
 .imgstr{
     width: 24em;
     padding:2em;
+    /* Standardvisning - viser 3 billeder, skjuler det enkelte */
+    display: inline-block;
+}
+
+.enkelt-billede {
+    display: none; /* Skjules som standard */
 }
 
 
@@ -345,5 +351,17 @@ figure{
 
 
 @media screen and (max-width: 600px) {
-    
+    .imgstr{
+        display: none; /* Skjul de tre billeder */
+    }
+
+    .enkelt-billede {
+        display: block; /* Vis det enkelte billede */
+        width: 100%; /* Fyld bredden */
+    }
+
+    #historieogmission {
+        width: 40em;
+        margin-bottom: 2em;
+    }
 }
