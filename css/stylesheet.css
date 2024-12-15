@@ -712,8 +712,12 @@
 
     .undermenu {
         font-weight: 100;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     
+
 
     
     /* Effekt der gør det muligt at klikke ud af menuen ved klik udenfor den grå boks */
