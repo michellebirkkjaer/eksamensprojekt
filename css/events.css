@@ -226,14 +226,20 @@ a{
 .footer{
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     line-height: 2em;
 }
 
-#footerhøjre{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+#footerhøjre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: auto;
+        justify-content: space-between;
+}
+
+#footerhøjre section p{
+    width: initial;
 }
 
 
