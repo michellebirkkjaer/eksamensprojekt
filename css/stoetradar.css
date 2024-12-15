@@ -12,140 +12,140 @@ html {
     background-color: black;
 }
 
-@media screen and (min-width: 1100px){
-header {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    width: 100%;
-    z-index: 1000;
-    background: #dd6d46;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-transform: uppercase;
-}
+    header {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        width: 100%;
+        z-index: 1000;
+        background: #dd6d46;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
 
-/* Header logo */
-header .logo{
-    margin-left: 10px;
-    padding-left: 0;
-}
+    /* Header logo */
+    header .logo{
+        margin-left: 10px;
+        padding-left: 0;
+    }
 
-.logo{
-    width: 10vw;
+    .logo{
+        width: 10vw;
 
-}
+    }
 
-/* Styling af hovedmenupunkterne */
-header .navbar ul {
-    list-style: none;
-}
+    /* Styling af hovedmenupunkterne */
+    header .navbar ul {
+        list-style: none;
+    }
 
-header .navbar ul li {
-    position: relative;
-    float: left;
-}
+    header .navbar ul li {
+        position: relative;
+        float: left;
+    }
 
 
-/* Styling af hovedmenu og undermenu */
-header .navbar ul li a {
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Inter', sans-serif;
-    padding: 18px 70px;
-    color: white;
-    display: block;
-    text-align: center;
-}
+    /* Styling af hovedmenu og undermenu */
+    header .navbar ul li a {
+        box-sizing: border-box;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        padding: 18px 70px;
+        color: white;
+        display: block;
+        text-align: center;
+    }
 
-/* Hovereffekt til menupunkterne */
-header .navbar ul li a:hover {
-    background: #dd6c46ce;
-    color: #fff;
-}
+    /* Hovereffekt til menupunkterne */
+    header .navbar ul li a:hover {
+        background: #dd6c46ce;
+        color: #fff;
+    }
 
-/* Første niveau af undermenu */
-header .navbar ul li ul {
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    width: 200px; /* Ensartet bredde */
-    background: #dd6d46; /* Let baggrundsfarve for synlighed */
-    display: none;
-    padding: 0;
-}
+    /* Første niveau af undermenu */
+    header .navbar ul li ul {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 200px; /* Ensartet bredde */
+        background: #dd6d46; /* Let baggrundsfarve for synlighed */
+        display: none;
+        padding: 0;
+    }
 
-header .navbar ul li ul li {
-    width: 100%; /* Ensartet bredde */
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
-}
+    header .navbar ul li ul li {
+        width: 100%; /* Ensartet bredde */
+        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
+    }
 
-/* Styling af undermenu links */
-header .navbar ul li ul li a {
-    padding: 10px 0; /* Juster padding for centrering */
-    color: white; /* Sørger for, at teksten er synlig */
-    text-align: center;
-    width: 100%; /* Fyld hele bredden af menuen */
-    display: block;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
+    /* Styling af undermenu links */
+    header .navbar ul li ul li a {
+        padding: 10px 0; /* Juster padding for centrering */
+        color: white; /* Sørger for, at teksten er synlig */
+        text-align: center;
+        width: 100%; /* Fyld hele bredden af menuen */
+        display: block;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
 
-header .navbar ul li ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
-    color: white;
-}
+    header .navbar ul li ul li a:hover {
+        background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
+        color: white;
+    }
 
-/* Næste niveau af undermenu */
-header .navbar ul li ul li ul {
-    left: 100%; /* Justering til højre for første undermenu */
-    top: 0;
-    width: 200px; /* Ensartet bredde */
-    background: transparent; /* Ensartet baggrund */
-    display: none;
-}
+    /* Næste niveau af undermenu */
+    header .navbar ul li ul li ul {
+        left: 100%; /* Justering til højre for første undermenu */
+        top: 0;
+        width: 200px; /* Ensartet bredde */
+        background: transparent; /* Ensartet baggrund */
+        display: none;
+    }
 
-header .navbar ul li ul li ul a {
-    padding: 10px 0; /* Juster padding for centrering */
-    color: white; /* Sørger for synlig tekst */
-    text-align: center;
-    width: 100%; /* Fyld hele bredden af menuen */
-    display: block;
-    box-sizing: border-box;
-}
+    header .navbar ul li ul li ul a {
+        padding: 10px 0; /* Juster padding for centrering */
+        color: white; /* Sørger for synlig tekst */
+        text-align: center;
+        width: 100%; /* Fyld hele bredden af menuen */
+        display: block;
+        box-sizing: border-box;
+    }
 
-/* Hover-effekt til at vise undermenuer */
-header .navbar ul li:hover > ul,
-header .navbar ul li ul li:hover > ul {
-    display: block;
-}
+    /* Hover-effekt til at vise undermenuer */
+    header .navbar ul li:hover > ul,
+    header .navbar ul li ul li:hover > ul {
+        display: block;
+    }
 
-/* Gemmer checkboxen */
-#sidebar-active {
-    display: none;
-}
+    /* Gemmer checkboxen */
+    #sidebar-active {
+        display: none;
+    }
 
-header label {
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
-    display: none;
-}
+    header label {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        display: none;
+    }
 
-/* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
-.burgermenu{
-    display: none;
-}
+    /* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
+    .burgermenu{
+        display: none;
+    }
 
 
 #støtradarimg{
     width: 100vw;
-    background-image: linear-gradient(transparent 60%, black 100%);
+    margin-top: 4em;
+
 }
 
 #mønsterimg {
@@ -231,8 +231,12 @@ h3{
     margin-left: 2.5em;
 }
 
-h1, h2, h3{
-    font-weight: 400;
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+h4{
+    font-weight: 300;
 }
 
 a{
@@ -254,7 +258,6 @@ a{
     align-items: flex-end;
 }
 
-}
 @media screen and (max-width: 1099px) {
     header {
         position: fixed;
@@ -397,5 +400,16 @@ a{
 
 
 @media screen and (max-width: 600px) {
-    
+    .boks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donation{
+        padding: 0;
+    }
+
+    h2, h3{
+        margin-left: 1em;
+    }
 }
