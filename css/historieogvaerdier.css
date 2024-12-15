@@ -348,6 +348,14 @@ figure{
         margin-top: 0.3rem;
     }
 
+    .hovedmenu {
+        font-weight:500;
+    }
+
+    .undermenu {
+        font-weight: 100;
+    }
+
     .imgstr{
         width: 20em;
     }

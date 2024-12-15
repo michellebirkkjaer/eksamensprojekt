@@ -703,7 +703,18 @@
     /* den grå boks reaktion/ændring npr de tre streger klikkes */
     #sidebar-active:checked ~ .links-container{
     right: 0;  /* ændres fra -100 (skjult) til 0 (synlig) */
+    color: transparent;
     }
+
+    .hovedmenu {
+        font-weight:500;
+    }
+
+    .undermenu {
+        font-weight: 100;
+    }
+    
+
     
     /* Effekt der gør det muligt at klikke ud af menuen ved klik udenfor den grå boks */
     #sidebar-active:checked ~ #overlay{
@@ -722,6 +733,10 @@
         width: 100%;
         padding-left: 0;
         margin-top: 0.3rem;
+    }
+
+    ul .dropdown{
+        display: table-column;
     }
 
 
