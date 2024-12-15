@@ -382,7 +382,7 @@ a{
 
     #åbning{
         margin-left: 3em;
-        width: 90vw;
+        width: 82vw;
     }
 }
 
@@ -393,8 +393,17 @@ a{
         flex-direction: column;
     }
 
+    .sektioner img{
+        width: 25em;
+    }
+
     .billeder{
         width: 27em;
         height: auto;
     }
+
+    section {
+        margin-right: 1em;
+    }
+    
 }
