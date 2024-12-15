@@ -12,12 +12,13 @@ html {
     background-color: black;
 }
 
+@media screen and (min-width: 1100px){
 header {
     position: fixed;
     top:0;
-    left: 0;
-    right: 0;
-    width: 100vw;
+    left:0;
+    right:0;
+    width: 100%;
     z-index: 1000;
     background: #dd6d46;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -55,7 +56,7 @@ header .navbar ul li a {
     box-sizing: border-box;
     text-decoration: none;
     font-size: 15px;
-    font-family: 'Lao Sangam MN', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding: 18px 70px;
     color: white;
     display: block;
@@ -92,10 +93,12 @@ header .navbar ul li ul li a {
     width: 100%; /* Fyld hele bredden af menuen */
     display: block;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 header .navbar ul li ul li a:hover {
     background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
+    color: white;
 }
 
 /* Næste niveau af undermenu */
@@ -123,10 +126,9 @@ header .navbar ul li ul li:hover > ul {
 }
 
 /* Gemmer checkboxen */
-#menu-bar {
+#sidebar-active {
     display: none;
 }
-
 
 header label {
     font-size: 20px;
@@ -137,7 +139,7 @@ header label {
 
 /* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
 .burgermenu{
-display: none;
+    display: none;
 }
 
 
@@ -252,9 +254,145 @@ a{
     align-items: flex-end;
 }
 
-
+}
 @media screen and (max-width: 1099px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0; 
+        right: 0; 
+        width: 100%;
+        z-index: 1000;
+        background: #dd6d46;
+        padding: 0.3125rem; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    
+    header .logo{
+        margin-left: 0.0625rem;
+        padding-left: 0rem;
+    }
+    
+    .logo{
+        width: 10vw;
+        padding-top: 5%;
+    
+    }
+    
+  
+    /* .navbar {
+        display: none;
+    } */
+    
+    nav{
+        height: 3.75rem;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    
+    /* styling af tekst */
+    nav ul li a{
+        height: 100%;
+        padding: 0 1.25rem;
+        display: flex;
+        align-items: flex-start;
+        text-decoration: none;
+        color: white;
+    }
+    
 
+
+    /* styling af ikoner ikoner */
+    /* de tre streger */
+    .streger {
+        fill: white;
+        background-color: transparent;
+    }
+    
+    /* krydset */
+    nav svg .kryds {
+        fill: white;
+        background-color: transparent;
+    }
+    
+    /* fjerner checkboks (åben) */
+    #sidebar-active {
+        display: none;
+    }
+    
+    /* fjerner checkboks (lukket)*/
+    .open-sidebar-button, .close-sidebar-button {
+        display: none; 
+    }
+    
+    
+    /* styling af selve den boks der folder ud, når burgeren klikkes */
+        .links-container{
+            height: 100%;
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            background-color:#dd6d46;
+    
+           flex-direction: column; /* opsætning over hinanden */
+           align-items: flex-start; /* placering i venstre side */
+    
+           position: fixed; /* Navigationsbaren følger med når der scrolles */
+           top: 0;
+           right: -100%; /* den orange boks er skjult til de tre streger klikkes af */
+           z-index: 10;
+           width: 18.75rem;
+           color: white;
+    
+           box-shadow: -0.3rem 0 0.3rem rgba(0,0,0,0.25); /* svag skygge på boksen */
+           transition: 1s ease-out; /* åbnes smooth */
+    
+        }
+    
+    nav ul li a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 1.25rem 1.85rem;
+        justify-content: flex-start; 
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 0.5rem;
+        display: block;
+    }
+    
+    /* den grå boks reaktion/ændring npr de tre streger klikkes */
+    #sidebar-active:checked ~ .links-container{
+    right: 0;  /* ændres fra -100 (skjult) til 0 (synlig) */
+    }
+    
+    /* Effekt der gør det muligt at klikke ud af menuen ved klik udenfor den grå boks */
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        display: block;
+    }
+    
+    .navbar-menu li:hover > .dropdown {
+        display: block;
+        position: relative; /* sørger for at undermenuerne ikke "dropper down" oveni hovedmenuerne */
+        width: 100%;
+        padding-left: 0;
+        margin-top: 0.3rem;
+    }
 }
 
 
