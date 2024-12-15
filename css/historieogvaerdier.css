@@ -190,7 +190,7 @@ figure{
     display: inline-block;
 }
 
-.enkelt-billede {
+.enkeltbillede {
     display: none; /* Skjules som standard */
 }
 
@@ -208,6 +208,7 @@ figure{
     justify-content: space-around;
     align-items: flex-end;
 }
+
 
 @media screen and (max-width: 1099px) {
     header {
@@ -235,7 +236,6 @@ figure{
         padding-top: 5%;
     
     }
-    
   
     /* .navbar {
         display: none;
@@ -347,6 +347,14 @@ figure{
         padding-left: 0;
         margin-top: 0.3rem;
     }
+
+    .imgstr{
+        width: 20em;
+    }
+    
+    p{
+        margin-bottom: 1.5em;
+    }
 }
 
 
@@ -361,6 +369,7 @@ figure{
     }
 
     #historieogmission {
+        display: block;
         width: 40em;
         margin-bottom: 2em;
     }
