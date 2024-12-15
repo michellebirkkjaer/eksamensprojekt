@@ -146,6 +146,7 @@ header label {
 
 #instrumenterimg{
     width: 100%;
+    margin-top: 4em;
 }
 
 #mønsterimg{
@@ -198,7 +199,7 @@ h1{
 }
 
 h1, h2, h3, h4 {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .sektioner h1, .sektioner h2, .sektioner p, h3, h4, a {
@@ -387,5 +388,13 @@ a{
 
 
 @media screen and (max-width: 600px) {
-    
+    .sektioner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .billeder{
+        width: 27em;
+        height: auto;
+    }
 }
