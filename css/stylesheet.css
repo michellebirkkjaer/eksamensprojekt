@@ -363,6 +363,23 @@
         justify-content: center;
     }
 
+
+    .sektiontre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faceinsta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ikoner {
+        width: 3em;
+        margin: 1em;
+    }
+
     .footer{
         display: flex;
         justify-content: space-between;
@@ -756,6 +773,26 @@
     }
 
 
+    .sektiontre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faceinsta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ikoner {
+        width: 1.5em;
+        margin: 0.5em;
+    }
+
+    #socialemedier{
+        width: 25em;
+    }
+
     .footer{
     display: flex;
     flex-direction: row;
@@ -1000,12 +1037,29 @@
         font-size: 3em;
     }
     #socialemedier{
-        width: 15em;
+        width: 14em;
     }
 
     #moenster{
     min-width: 100vw;
     max-width: 100vw;
+    }
+
+
+    .sektiontre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faceinsta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ikoner {
+        width: 0.75em;
+        margin: 0.2em;
     }
 
     .footer{
