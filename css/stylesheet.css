@@ -139,11 +139,6 @@
         display: none;
     }
 
-    /* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
-    .burgermenu{
-        display: none;
-    }
-
     h1, h2 {
         font-weight: 400;
     }
