@@ -136,11 +136,6 @@ html {
         display: none;
     }
 
-    /* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
-    .burgermenu{
-        display: none;
-    }
-
 
 #støtradarimg{
     width: 100vw;

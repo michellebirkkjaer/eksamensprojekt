@@ -137,10 +137,6 @@ header label {
     display: none;
 }
 
-/* Fjerner navigationsbar/burgermenu til mobil og tablet for desktop */
-.burgermenu{
-    display: none;
-}
 
 .støtknap {
     display: inline-block;
